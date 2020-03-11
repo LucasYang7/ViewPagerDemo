@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_test"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <EditText
+        android:id="@+id/edt_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="插入/删除的元素：" />
+
+    <EditText
+        android:id="@+id/edt_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="插入/删除的元素位置：" />
+
+    <TextView
+        android:id="@+id/tv_items_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据列表items的长度是：" />
+
+    <TextView
+        android:id="@+id/tv_current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前选择的位置：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="insert a element" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="delete a element" />
+    </LinearLayout>
+</LinearLayout>
